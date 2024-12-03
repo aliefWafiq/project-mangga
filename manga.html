@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/16d3d4b4e9.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style-manga.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="wrap-nav">
+      <div class="section-nav">
+        <div class="cover-logo">
+          <img src="asset/logo manggaku.png" alt="" class="logo">
+        </div>
+      </div>
+      <div class="section-nav2">
+        <a href="index.html">Home</a>
+        <div class="search">
+          <input type="text" placeholder="search..." />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="wrapper">
+      <div class="manga">
+
+        <div class="section1">
+          <div class="info">
+            <div class="cover">
+              <img src="asset/cover-dandadan.jpg" alt="" />
+            </div>
+            <div class="detail">
+              <h1 class="judul">Dandadan</h1>
+              <div class="genre-list">
+                <p class="genre">Action</p>
+                <p class="genre">Sci-fi</p>
+                <p class="genre">Shounen</p>
+                <p class="genre">Supernatural</p>
+                <p class="genre">Comedy</p>
+              </div>
+              <div class="author">
+                <h2>TATSU Yukinobu</h2>
+              </div>
+              <div class="chapter">
+                <h3>Chapter 175</h3>
+              </div>
+              <div class="sipnosis">
+                <p>Dandadan bercerita tentang dua siswa yang terlibat dalam hal-hal absurd seputar alien dan hantu.
+                  Cerita bermula ketika Momo Ayase dipertemukan dengan Ken "Okarun" Takakura. Namun, keduanya justru tak
+                  dapat akur di momen perkenalan mereka sebab kepercayaan akan keberadaan entitas tertentu yang saling
+                  bertentangan. Momo yang memercayai hantu karena neneknya adalah seorang medium roh lantas ditertawakan
+                  oleh Okarun yang menyangkal keberadaan makhluk gaib itu dan justru meyakini adanya alien.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="write-comment">
+              <div class="profile">
+                <img src="asset/profile.jpg" alt="">
+              </div>
+              <input type="text" placeholder="comment...">
+              <button class="send">
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+            <div class="comment-section">
+              <div class="wrap-user-comment">
+                <div class="user">
+                  <div class="profile">
+                    <img src="asset/Denji.jpg" alt="">
+                  </div>
+                  <p class="username">Manusia gergaji</p>
+                </div>
+                <p class="comment-user">Wah manga nya bagus sekali</p>
+              </div>
+              <div class="wrap-user-comment">
+                <div class="user">
+                  <div class="profile">
+                    <img src="asset/kintoki.jpg" alt="">
+                  </div>
+                  <p class="username">Gin</p>
+                </div>
+                <p class="comment-user">Manga nya ngakax</p>
+              </div>
+              <div class="wrap-user-comment">
+                <div class="user">
+                  <div class="profile">
+                    <img src="asset/Ikuyo Kita.jpg" alt="">
+                  </div>
+                  <p class="username">Kittaaaa</p>
+                </div>
+                <p class="comment-user">Sugoiiiiiiiii!!!!!!!</p>
+              </div>
+              <div class="wrap-user-comment">
+                <div class="user">
+                  <div class="profile">
+                    <img src="asset/rika.jpg" alt="">
+                  </div>
+                  <p class="username">raja Iblis</p>
+                </div>
+                <p class="comment-user">keren coy kekuatannya</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section2" id="chapter">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  let chapter = document.getElementById('chapter')
+
+  for (let i = 175; i > 0; i--) {
+    let p = document.createElement('p')
+    p.innerText = "chapter " + i
+    p.classList.add('ch')
+    chapter.appendChild(p)
+  }
+</script>
